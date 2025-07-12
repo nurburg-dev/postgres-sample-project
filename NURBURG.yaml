@@ -1,0 +1,20 @@
+postgresql:
+- name: testpostgres
+  cpuCores: 1
+  memoryGB: 1
+  dbName: test
+  user: testuser
+  password: password
+traffic:
+  env:
+    API_HOST: http://testservice:3000
+services:
+- name: testservice
+  port: 3000
+  runtime: nodejs
+  instances: 1
+  env:
+    DB_HOST: testpostgres
+    DB_NAME: test
+    DB_USER: testuser
+    DB_PASSWORD: password
