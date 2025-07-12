@@ -1,5 +1,5 @@
 postgresql:
-- name: testpostgres
+- name: test-postgresql
   cpuCores: 1
   memoryGB: 1
   dbName: test
@@ -14,7 +14,8 @@ services:
   runtime: nodejs
   instances: 1
   env:
-    DB_HOST: testpostgres
+    DB_HOST: test-postgresql
     DB_NAME: test
     DB_USER: testuser
     DB_PASSWORD: password
+    PORT: 3000
