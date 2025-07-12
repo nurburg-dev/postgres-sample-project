@@ -36,17 +36,13 @@ export default function () {
     });
 
     const writePayload = JSON.stringify({
-      name: faker.name(),
-      email: faker.email(),
+      name: faker.person.name(),
+      email: faker.person.email(),
     });
 
-    const writeResponse = http.post(
-      `${API_HOST}/api/users`,
-      writePayload,
-      {
-        headers: { "Content-Type": "application/json" },
-      }
-    );
+    const writeResponse = http.post(`${API_HOST}/api/users`, writePayload, {
+      headers: { "Content-Type": "application/json" },
+    });
 
     check(writeResponse, {
       "write operation successful": (r) => r.status === 201 || r.status === 200,

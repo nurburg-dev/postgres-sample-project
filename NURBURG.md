@@ -5,6 +5,7 @@ tags:
   - postgresql
   - express
   - nodejs
+summary: This is the summary of a sample project
 ---
 
 This is a PostgreSQL in-memory experiment project demonstrating a Node.js Express API with PostgreSQL database integration.
