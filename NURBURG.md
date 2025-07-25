@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL Sample Project
-video: https://www.youtube.com/watch?v=UUaAQJ0DBPQ
+video: https://www.youtube.com/watch?v=7ySVWcFHz98
 tags:
   - postgresql
   - express
