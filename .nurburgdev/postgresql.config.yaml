@@ -1,0 +1,6 @@
+name: test-postgresql
+cpuCores: 1
+memoryGB: 1
+dbName: test
+user: testuser
+password: password

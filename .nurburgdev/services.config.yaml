@@ -1,0 +1,10 @@
+name: testservice
+port: 3000
+runtime: nodejs
+instances: 1
+env:
+  DB_HOST: test-postgresql
+  DB_NAME: test
+  DB_USER: testuser
+  DB_PASSWORD: password
+  PORT: 3000
